@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image , ScrollView ,Pressable} from "react-native";
 import React from "react";
 import Slider from "../components/Slider";
 import Search from "../components/Search";
-import { ScrollView } from "react-native";
 import SectionRecomment from "../components/SectionRecoment";
+import Product from "../components/Product";
 export default function Home() {
   return (
     <ScrollView>
@@ -185,7 +185,11 @@ export default function Home() {
             style={{ width: "100%", height: "100%" }}
           />
         </View>
+
+
         <SectionRecomment />
+
+        <Product/>
       </View>
     </ScrollView>
   );
