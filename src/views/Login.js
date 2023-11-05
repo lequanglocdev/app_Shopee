@@ -1,8 +1,28 @@
 import { View, Text, StyleSheet, Image, TextInput } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Pressable } from "react-native";
-
+import { AntDesign ,Entypo  } from "@expo/vector-icons";
 export default function Login({ navigation }) {
+  var error = ''
+  const [showPassword, setShowPassword] = useState(false);
+  const [inputName , setInputName] = useState('admin')
+  const [inputPass , setInputPass] = useState('123456')
+  const users = [
+  { inputName: 'admin', inputPass: '123456' },
+  { inputName: 'user2', inputPass: 'password2' },
+  // Thêm thông tin đăng nhập khác tại đây
+];
+  const handleLogin = () => {
+  // Thực hiện kiểm tra thông tin đăng nhập tại đây
+  const foundUser = users.find((user) => user.inputName  ===  inputName && user.inputPass === inputPass);
+  console.log(foundUser)
+  if (foundUser) {
+    navigation.navigate('Home');
+  } else {
+    alert('Tên đăng nhập hoặc mật khẩu không chính xác');
+  }
+};
+  
   return (
     <View style={styles.container}>
       <View
@@ -50,7 +70,7 @@ export default function Login({ navigation }) {
             backgroundColor: "#fff",
             justifyContent: "center",
             marginTop: 40,
-            alignItems:'center'
+            alignItems: "center",
           }}
         >
           {/* name */}
@@ -61,25 +81,27 @@ export default function Login({ navigation }) {
               backgroundColor: "#fff",
               flexDirection: "row",
               alignItems: "center",
-             
             }}
           >
             <Image
               source={require("../../src/image/iconUser.png")}
-              style={{ marginLeft: 20 ,width:30,height:30}}
+              style={{ marginLeft: 20, width: 30, height: 30 }}
             />
             <TextInput
               placeholder="Tên đăng nhập"
+              value={inputName}
+              onChangeText={setInputName}
               style={{
                 width: "100%",
                 height: 50,
                 fontSize: 16,
-                paddingHorizontal:20,
-                outlineStyle: 'none',
+                paddingHorizontal: 20,
+                outlineStyle: "none",
                 borderBottomWidth: 1,
                 borderBottomColor: "#ccc",
               }}
             ></TextInput>
+            <Text style={{ color: 'red', fontWeight: 'bold' }}>{error != null ? error : ''}</Text>
           </View>
 
           {/* pas */}
@@ -91,29 +113,39 @@ export default function Login({ navigation }) {
               backgroundColor: "#fff",
               flexDirection: "row",
               alignItems: "center",
-             
             }}
           >
             <Image
               source={require("../../src/image/iconLock.png")}
-              style={{ marginLeft: 20, width:30, height:30 }}
+              style={{ marginLeft: 20, width: 30, height: 30 }}
             />
             <TextInput
               placeholder="Mật khẩu"
+              value={inputPass}
+              onChangeText={setInputPass}
+              secureTextEntry = {!showPassword}
               style={{
                 width: "100%",
                 height: 50,
                 fontSize: 16,
-                paddingHorizontal:20,
-                outlineStyle: 'none',
+                paddingHorizontal: 20,
+                outlineStyle: "none",
                 borderBottomWidth: 1,
                 borderBottomColor: "#ccc",
+
               }}
             ></TextInput>
-            <Image
-              source={require("../../src/image/eye.png")}
-              style={{ marginLeft: 10 }}
-            />
+            <Pressable 
+                onPress={() => setShowPassword(!showPassword)} 
+            >
+              {showPassword == true ? (
+                <AntDesign name="eye" size={24} color="black" />
+
+              ) : (
+                <Entypo name="eye-with-line" size={24} color="black" />
+
+              )}
+            </Pressable>
           </View>
         </View>
 
@@ -126,25 +158,24 @@ export default function Login({ navigation }) {
           }}
         >
           <Pressable
+          
             style={{
-              backgroundColor: "#ccc",
               width: 300,
               height: 45,
+              backgroundColor:'#F06145',
               justifyContent: "center",
               alignItems: "center",
               marginTop: 20,
               borderRadius: 10,
             }}
-            onPress={() => {
-              navigation.navigate("Home");
-            }}
+            onPress={handleLogin}
           >
             <Text
               style={{
                 textAlign: "center",
                 fontSize: 22,
                 textAlign: "center",
-                color: "#aca9a9",
+                color: "#fff",
               }}
             >
               Đăng nhập

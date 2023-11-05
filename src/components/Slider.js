@@ -11,7 +11,7 @@ const Slider = () => {
       {
         image: (
           <Image
-            source={require("../../src/image/bannerHome.png")}
+            source={require("../../src/image/slider/bannerHome.png")}
             resizeMode="stretch"
             style={{ width: screenWidth, height: "100%" }}
           />
@@ -20,7 +20,7 @@ const Slider = () => {
       {
         image: (
           <Image
-            source={require("../../src/image/bannerHome2.jpg")}
+            source={require("../../src/image/slider/bannerHome2.jpg")}
             resizeMode="stretch"
             style={{ width: screenWidth, height: "100%" }}
           />
@@ -29,7 +29,7 @@ const Slider = () => {
       {
         image: (
           <Image
-            source={require("../../src/image/bannerHome3.jpg")}
+            source={require("../../src/image/slider/bannerHome3.jpg")}
             resizeMode="stretch"
             style={{ width: screenWidth, height: "100%" }}
           />
@@ -38,7 +38,7 @@ const Slider = () => {
       {
         image: (
           <Image
-            source={require("../../src/image/bannerHome4.jpg")}
+            source={require("../../src/image/slider/bannerHome4.jpg")}
             resizeMode="stretch"
             style={{ width: screenWidth, height: "100%" }}
           />
@@ -47,7 +47,7 @@ const Slider = () => {
       {
         image: (
           <Image
-            source={require("../../src/image/bannerHome5.jpg")}
+            source={require("../../src/image/slider/bannerHome5.jpg")}
             resizeMode="stretch"
             style={{ width: screenWidth, height: "100%" }}
           />
@@ -56,7 +56,7 @@ const Slider = () => {
       {
         image: (
           <Image
-            source={require("../../src/image/bannerHome6.jpg")}
+            source={require("../../src/image/slider/bannerHome6.jpg")}
             resizeMode="stretch"
             style={{ width: screenWidth, height: "100%" }}
           />

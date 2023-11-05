@@ -12,7 +12,7 @@ export default function Home() {
           {/* <Slider/> */}
           <View style={{}}>
             <Image
-              source={require("../image/bannerHome.png")}
+              source={require("../image/slider/bannerHome.png")}
               style={{ width: "100%", height: 192 }}
             />
           </View>
@@ -181,7 +181,7 @@ export default function Home() {
 
         <View style={{ width: "100", height: 110 }}>
           <Image
-            source={require("../image/banner.png")}
+            source={require("../image/slider/banner.png")}
             style={{ width: "100%", height: "100%" }}
           />
         </View>
