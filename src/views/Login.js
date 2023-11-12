@@ -13,7 +13,6 @@ export default function Login({ navigation }) {
   // Thêm thông tin đăng nhập khác tại đây
 ];
   const handleLogin = () => {
-  // Thực hiện kiểm tra thông tin đăng nhập tại đây
   const foundUser = users.find((user) => user.inputName  ===  inputName && user.inputPass === inputPass);
   console.log(foundUser)
   if (foundUser) {

@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Home, Product, Notify, User, Login ,ShopingNam ,ShoppingNu,ShoppingHouse,ShoppingBe,ShoppingPhone,ShoppingThietBi} from "./src/views";
+import { Home, Product, Notify, User, Login ,ShopingNam ,ShoppingNu,ShoppingHouse,ShoppingBe,ShoppingPhone,ShoppingThietBi,DetailProduct} from "./src/views";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -137,6 +137,7 @@ export default function App() {
         <Stack.Screen name="ShoppingHouse" component={ShoppingHouse} />
         <Stack.Screen name="ShoppingPhone" component={ShoppingPhone} />
         <Stack.Screen name="ShoppingBe" component={ShoppingBe} />
+        <Stack.Screen name="DetailProduct" component={DetailProduct} />
         <Stack.Screen name="ShoppingThietBi" component={ShoppingThietBi} />
       </Stack.Navigator>
     </NavigationContainer>

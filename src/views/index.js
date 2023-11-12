@@ -9,6 +9,7 @@ import ShoppingBe from "./ShoppingBe";
 import ShoppingPhone from "./ShoppingPhone";
 import ShoppingThietBi from "./ShoppingThietBi";
 import ShoppingHouse from "./ShoppingHouse";
+import DetailProduct from "./DetailProduct";
 export {
   Home,
   Product,
@@ -21,4 +22,5 @@ export {
   ShoppingNu,
   ShoppingPhone,
   ShoppingThietBi,
+  DetailProduct
 };

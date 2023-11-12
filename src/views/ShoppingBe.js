@@ -16,12 +16,18 @@ const ShoppingBe = ({navigation}) => {
       price: "44.000đ",
       sale: "đã bán 10.6k",
       imgae: require("../image/productBe/img.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Nước hoa cho bé Johnson's Baby nhiều mùi ...",
       price: "49.000đ",
       sale: "đã bán 92.5k",
       imgae: require("../image/productBe/img2.png"),
+      detail: [
+        
+      ],
     },
     
     {
@@ -29,84 +35,126 @@ const ShoppingBe = ({navigation}) => {
       price: "200.000đ",
       sale: "đã bán 14k",
       imgae: require("../image/productBe/img3.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "[MẪU MỚI TẶNG 4 MIẾNG] Miếng Lót Bobby Newborn ..",
       price: "95.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img4.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "[Mẫu mới] Tã quần UniDry Siêu khô thoáng gói Super..",
       price: "269.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img5.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "[Mẫu mới] Tã quần UniDry Siêu khô thoáng gói Super..",
       price: "269.000",
       sale: "đã bán 7.8k",
       imgae: require("../image/productBe/img6.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "(1 Thanh) Sữa Meiji Thanh Số 0, Nhập Khẩu 27g...",
       price: "26.950đ",
       sale: "đã bán 33.6k",
       imgae: require("../image/productBe/img7.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Dầu Dưỡng Ẩm Mát Xa Johnson's Baby...",
       price: "45.000đ",
       sale: "đã bán 9.1k",
       imgae: require("../image/productBe/img8.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Ghế nhún, ghế rung (GHẾ + GỐI + THÚ TREO)  đa năng...",
       price: "160.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img9.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Băng Vệ Sinh MAMA 12 Miếng (Cho Mẹ Sau Sinh) ...",
       price: "30.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img10.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "(Xưởng Sản Xuất) Xe tập đi gỗ - xe gà tập đi hình...",
       price: "95.000đ",
       sale: "đã bán 14k",
       imgae: require("../image/productBe/img11.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Chậu tắm cho bé hậu Tắm Cho Bé Đa Năng Dễ Dàng..",
       price: "26.950đ",
       sale: "đã bán 63.6k",
       imgae: require("../image/productBe/img12.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "HUNG 10 bịch Khăn giấy ướt  DUCK con vịt vàng ...",
       price: "45.000đ",
       sale: "đã bán 48k",
       imgae: require("../image/productBe/img13.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Bình sữa hình mèo PPSU cổ rộng kèm tay cầm van ...",
       price: "29.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img14.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Chậu Tắm Ếch cao cấp cho bé có van thoát nước ...",
       price: "30.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img15.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "[Mẫu mới] Tã quần UniDry Siêu khô thoáng gói Super..",
       price: "269.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img6.png"),
+      detail: [
+        
+      ],
     },
   ];
   return (
@@ -152,7 +200,11 @@ const ShoppingBe = ({navigation}) => {
           numColumns={2}
           renderItem={({ item }) => {
             return (
-              <Pressable>
+              <Pressable
+              onPress={() => {
+                navigation.navigate("DetailProduct", item);
+              }}
+              >
                 <View
                   style={{
                     width: 172,

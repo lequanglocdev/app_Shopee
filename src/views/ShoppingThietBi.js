@@ -16,12 +16,18 @@ const ShoppingTv = ({navigation}) => {
       price: "19.000đ",
       sale: "đã bán 6.6k",
       imgae: require("../image/productThietBi/img.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Loa bluetooth mini không dây,nghe nhạc,giá rẻ...",
       price: "1.000đ",
       sale: "đã bán 11.5k",
       imgae: require("../image/productThietBi/img2.png"),
+      detail: [
+        
+      ],
     },
    
     {
@@ -29,72 +35,108 @@ const ShoppingTv = ({navigation}) => {
       price: "4.950đ",
       sale: "đã bán 11.6k",
       imgae: require("../image/productThietBi/img3.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Quạt tản nhiệt sò lạnh cho điện thoại S3 - Kẹp 2 chiều..",
       price: "135.000đ",
       sale: "đã bán 18k",
       imgae: require("../image/productThietBi/img4.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Tai nghe Apple AirPods with Charging Case 2nd...",
       price: "2.690.000đ",
       sale: "đã bán 29.5k",
       imgae: require("../image/productThietBi/img5.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Loa Bluetooth Mini 5.0 ROBOT RB100 3W - Pin...",
       price: "139.000đ",
       sale: "đã bán 7.5k",
       imgae: require("../image/productThietBi/img6.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Loa bluetooth nghe nhạc không dây Charge 3 Mini...",
       price: "99.000đ",
       sale: "đã bán 88.6k",
       imgae: require("../image/productThietBi/img7.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Tai nghe Bluetooth không dây MINPRO M19 -  Hỗ Trợ...",
       price: "37.000đ",
       sale: "đã bán 18k",
       imgae: require("../image/productThietBi/img8.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Tai nghe BASEUS C17 Type-C có dây có mic cho điện ...",
       price: "129.000đ",
       sale: "đã bán 4.4k",
       imgae: require("../image/productThietBi/img9.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Tai nghe chụp tai Logitech H111 - 1 jack 3.5mm, Mic...",
       price: "179.000đ",
       sale: "đã bán 5.5k",
       imgae: require("../image/productThietBi/img10.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Máy Chơi Game Nintendo DSi Full Game...",
       price: "986.000đ",
       sale: "đã bán 5.5k",
       imgae: require("../image/productThietBi/img11.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Tay Cầm Chơi Game X3/T3 Có Bluetooth Cho ...",
       price: "440.000đ",
       sale: "đã bán 5.5k",
       imgae: require("../image/productThietBi/img12.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Máy chơi game cầm tay X7 màn hình 4.3 inch tặng ...",
       price: "179.000đ",
       sale: "đã bán 66k",
       imgae: require("../image/productThietBi/img13.png"),
+      detail: [
+        
+      ],
     },
     {
       name: "Máy chơi game cầm tay X7 màn hình 4.3 inch tặng ...",
       price: "690.000đ",
       sale: "đã bán 29.5k",
       imgae: require("../image/productThietBi/img14.png"),
+      detail: [
+        
+      ],
     },
   ];
   return (
@@ -140,7 +182,12 @@ const ShoppingTv = ({navigation}) => {
           numColumns={2}
           renderItem={({ item }) => {
             return (
-              <Pressable>
+              <Pressable
+              
+              onPress={() => {
+                navigation.navigate("DetailProduct", item);
+              }}
+              >
                 <View
                   style={{
                     width: 172,
