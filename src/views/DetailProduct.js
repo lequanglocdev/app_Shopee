@@ -3,13 +3,23 @@ import React, { useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { ImageBackground } from "react-native";
+import { Feather } from '@expo/vector-icons';
 export default function DetailProduct({ navigation }) {
   const rou = useRoute();
-  const[add,setAdd] = useState()
-  const[remove,setRemove] = useState()
-  console.log("anh", rou.params?.detail);
+
+  const addToCart = () => {
+    const newItem = {
+      name: rou.params?.name,
+      price: rou.params?.price,
+      imgae: rou.params?.imgae,
+    };
+    navigation.navigate("Cart", newItem);
+    console.log("cart:",newItem)
+  };
+
+  //console.log("anh", rou.params?.detail);
   return (
     <View style={styles.container}>
       <View
@@ -31,32 +41,29 @@ export default function DetailProduct({ navigation }) {
         </Text>
         <AntDesign name="hearto" size={30} color="#F06145" />
       </View>
-      <View
-        style={{
-          width: "100%",
-          height: 349,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Image
-          style={{ width: "100%", height: "100%" }}
-          source={rou.params?.imgae}
-        />
-      </View>
-      <View style={{ paddingHorizontal: 16 }}>
-        <View>
-          <Text style={{ fontSize: 14 }}>Màu: </Text>
-        </View>
+      <ImageBackground style={{width:'100%',height:'400px'}} source={require('../image/bgDetaill.png')}resizeMode="stretch">
         <View
           style={{
-            padding: 5,
-            flexDirection: "row",
-            justifyContent: "space-around",
+            width: "100%",
+            height: 349,
+            justifyContent: "center",
             alignItems: "center",
           }}
         >
-          <Pressable >
+          <Image
+            style={{ width: "100%", height: "100%" }}
+            source={rou.params?.imgae}
+          />
+        </View>
+      </ImageBackground>
+      <View style={{ paddingHorizontal: 16 }}>
+        {/* <View>
+          <Text style={{ fontSize: 14 }}>Màu: </Text>
+        </View> */}
+        <View style={{}}>
+          <Pressable
+            style={{ flexDirection: "row", justifyContent: "space-between" }}
+          >
             <Image
               source={rou.params?.detail[0]}
               style={{ width: 78, height: 78 }}
@@ -76,7 +83,7 @@ export default function DetailProduct({ navigation }) {
           </Pressable>
         </View>
         <View>
-          <Text style={{ fontSize: 14, fontWeight: "bold" }}>
+          <Text style={{ fontSize: 15, fontWeight: "bold" }}>
             {rou.params?.name}
           </Text>
         </View>
@@ -95,34 +102,19 @@ export default function DetailProduct({ navigation }) {
           </View>
         </View>
 
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <View>
-            <Text style={{ fontSize: 16, fontWeight: "bold" }}> Số lượng</Text>
-          </View>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-           <Pressable>
-            <Ionicons name="remove-circle-outline" size={34} color="black" />
-           </Pressable>
-            <Text style={{ fontSize: 20, paddingHorizontal: 6 }}>1</Text>
-           <Pressable>
-             <Ionicons name="add-circle-outline" size={34} color="black" />
-           </Pressable>
-          </View>
+        <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between'}}>
+            <View style={{flexDirection:'row',alignItems:'center'}}>
+                <Image source={require('../image/freeship.png')} style={{width:20,height:20}}/>
+                <Text>Miễn phí vận chuyển</Text>
+            </View>
+
+            <View style={{flexDirection:'row',alignItems:'center'}}>
+            <Feather name="truck" size={20} color="#53bbae" />
+            <Text style={{marginLeft:10}}>Phí vần chuyển: 0đ</Text>
+            </View>
         </View>
 
-        <View>
+        <View style={{marginTop:20}}>
           <View>
             <Text style={{ fontSize: 16, fontWeight: "bold" }}>
               Tổng thanh toán
@@ -147,6 +139,9 @@ export default function DetailProduct({ navigation }) {
               {rou.params?.price}
             </Text>
             <Pressable
+              onPress={() => {
+                addToCart();
+              }}
               style={{
                 width: 182,
                 height: 45,
@@ -164,6 +159,7 @@ export default function DetailProduct({ navigation }) {
             </Pressable>
           </View>
         </View>
+
       </View>
     </View>
   );

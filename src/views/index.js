@@ -10,6 +10,7 @@ import ShoppingPhone from "./ShoppingPhone";
 import ShoppingThietBi from "./ShoppingThietBi";
 import ShoppingHouse from "./ShoppingHouse";
 import DetailProduct from "./DetailProduct";
+import Cart from "./Cart";
 export {
   Home,
   Product,
@@ -22,5 +23,6 @@ export {
   ShoppingNu,
   ShoppingPhone,
   ShoppingThietBi,
-  DetailProduct
+  DetailProduct,
+  Cart
 };

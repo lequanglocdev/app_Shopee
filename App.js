@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Home, Product, Notify, User, Login ,ShopingNam ,ShoppingNu,ShoppingHouse,ShoppingBe,ShoppingPhone,ShoppingThietBi,DetailProduct} from "./src/views";
+import { Home, Product, Notify, User, Login ,ShopingNam ,ShoppingNu,ShoppingHouse,ShoppingBe,ShoppingPhone,ShoppingThietBi,DetailProduct,Cart} from "./src/views";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome, Ionicons, FontAwesome5 } from "@expo/vector-icons";
-
+import { Provider } from "react-redux";
+import { store } from "./src/redux/store";
 const Tab = createBottomTabNavigator();
 function MyTabs() {
   const screenOptions = {
@@ -128,7 +129,8 @@ export default function App() {
   const Stack = createNativeStackNavigator();
 
   return (
-    <NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={MyTabs} />
@@ -137,10 +139,12 @@ export default function App() {
         <Stack.Screen name="ShoppingHouse" component={ShoppingHouse} />
         <Stack.Screen name="ShoppingPhone" component={ShoppingPhone} />
         <Stack.Screen name="ShoppingBe" component={ShoppingBe} />
-        <Stack.Screen name="DetailProduct" component={DetailProduct} />
         <Stack.Screen name="ShoppingThietBi" component={ShoppingThietBi} />
+        <Stack.Screen name="DetailProduct" component={DetailProduct} />
+        <Stack.Screen name="Cart" component={Cart} />
       </Stack.Navigator>
     </NavigationContainer>
+    </Provider>
   );
 }
 
