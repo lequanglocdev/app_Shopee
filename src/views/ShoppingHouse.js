@@ -13,7 +13,7 @@ const ShoppingHouse = ({ navigation }) => {
   const items = [
     {
       name: "Ghế văn phòng máy tính imixcity bao phủ ghế xoay",
-      price: "60.000đ",
+      price: "60.000",
       sale: "đã bán 195",
       imgae: require("../image/productHouse/img.png"),
       detail: [
@@ -25,7 +25,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Kệ đựng đồ đa năng 3 tầng,4 tầng có bánh xe...",
-      price: "6.000đ",
+      price: "6.000",
       sale: "đã bán 14.5k",
       imgae: require("../image/productHouse/img2.png"),
       detail: [
@@ -36,7 +36,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Tủ Để Đồ Trang Điểm Mini, Kệ Đựng Mỹ Phẩm Mini Có...",
-      price: "60.000đ",
+      price: "60.000",
       sale: "đã bán 27.6k",
       imgae: require("../image/productHouse/img3.png"),
       detail: [
@@ -47,7 +47,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Ly Giữ Nhiệt Iced Americano Inox 304 Đúc...",
-      price: "33.000đ",
+      price: "33.000",
       sale: "đã bán 167k",
       imgae: require("../image/productHouse/img4.png"),
       detail: [
@@ -59,7 +59,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "CHẢO CHỐNG DÍNH CAO CẤP 18CM",
-      price: "39.000đ",
+      price: "39.000",
       sale: "đã bán 7.8k",
       imgae: require("../image/productHouse/img5.png"),
       detail: [
@@ -68,7 +68,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Bộ ga gối 3 món poly coton 1m6x2m và 1m8x2 ..",
-      price: "16.950đ",
+      price: "16.950",
       sale: "đã bán 63k",
       imgae: require("../image/productHouse/img6.png"),
       detail: [
@@ -79,7 +79,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Chảo chống dính sâu lòng 18cm dùng mọi loại bếp ...",
-      price: "25.000đ",
+      price: "25.000",
       sale: "đã bán 48k",
       imgae: require("../image/productHouse/img7.png"),
       detail: [
@@ -88,7 +88,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Ga Giường và 2 vỏ gối cotton poly cao cấp hàn ...",
-      price: "30.000đ",
+      price: "30.000",
       sale: "đã bán 66k",
       imgae: require("../image/productHouse/img8.png"),
       detail: [
@@ -100,7 +100,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Bàn học gấp gọn ngồi bệt, dùng cho học sinh...",
-      price: "109.000đ",
+      price: "109.000",
       sale: "đã bán 66k",
       imgae: require("../image/productHouse/img9.png"),
       detail: [
@@ -113,7 +113,7 @@ const ShoppingHouse = ({ navigation }) => {
     
     {
       name: "Ruột Gối Đầu Cao Cấp Pillow Nhiều Màu Tiê...",
-      price: "28.000đ",
+      price: "28.000",
       sale: "đã bán 167k",
       imgae: require("../image/productHouse/img11.png"),
       detail: [
@@ -126,7 +126,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Chăn hè COTTON POLY trần bông 3 lớp (Được chọn ...",
-      price: "83.000đ",
+      price: "83.000",
       sale: "đã bán 7.8k",
       imgae: require("../image/productHouse/img12.png"),
       detail: [
@@ -139,7 +139,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "[Siêu Sale] Tủ Để Đầu Giường - Tab Đầu Giường ..",
-      price: "103.000đ",
+      price: "103.000",
       sale: "đã bán 63.6k",
       imgae: require("../image/productHouse/img13.png"),
       detail: [
@@ -151,7 +151,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Thảm chùi chân 3D thảm lau chân_Thảm bếp  ...",
-      price: "20.000đ",
+      price: "20.000",
       sale: "đã bán 66k",
       imgae: require("../image/productHouse/img14.png"),
       detail: [
@@ -162,7 +162,7 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Khăn Tắm, Gội, Lau Mặt Châu Âu LOTUS 100%...",
-      price: "10.000đ",
+      price: "10.000",
       sale: "đã bán 66k",
       imgae: require("../image/productHouse/img15.png"),
       detail: [
@@ -174,7 +174,20 @@ const ShoppingHouse = ({ navigation }) => {
     },
     {
       name: "Set 200 dây kẽm nhung màu pastel Kèm Đèn ...",
-      price: "10.000đ",
+      price: "10.000",
+      sale: "đã bán 66k",
+      imgae: require("../image/productHouse/img16.png"),
+      detail: [
+        require("../image/productNu/item39.jpg"),
+        require("../image/productNu/item40.jpg"),
+        require("../image/productNu/item41.jpg"),
+        require("../image/productNu/item42.jpg"),
+        
+      ],
+    },
+    {
+      name: "Set 200 dây kẽm nhung màu pastel Kèm Đèn ...",
+      price: "10.000",
       sale: "đã bán 66k",
       imgae: require("../image/productHouse/img16.png"),
       detail: [
@@ -308,7 +321,7 @@ const ShoppingHouse = ({ navigation }) => {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.price}
+                        {item.price}đ
                       </Text>
                       <Text
                         style={{

@@ -11,6 +11,9 @@ import ShoppingThietBi from "./ShoppingThietBi";
 import ShoppingHouse from "./ShoppingHouse";
 import DetailProduct from "./DetailProduct";
 import Cart from "./Cart";
+import Pay from "./Pay"
+import Pay2 from "./Pay2";
+import PaySuccess from "./PaySuccess";
 export {
   Home,
   Product,
@@ -24,5 +27,8 @@ export {
   ShoppingPhone,
   ShoppingThietBi,
   DetailProduct,
-  Cart
+  Cart,
+  Pay,
+  Pay2,
+  PaySuccess
 };

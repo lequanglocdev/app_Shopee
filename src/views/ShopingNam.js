@@ -14,7 +14,7 @@ const ShopingNam = ({ navigation }) => {
   const items = [
     {
       name: "Áo Polo thể thao nam ProMax-S1 Logo thương...",
-      price: "179.000đ",
+      price: "179.000",
       sale: "đã bán 66k",
       imgae: require("../image/productNam/img.png"),
       detail: [
@@ -26,7 +26,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Áo chống nắng nam nữ dày dặn cao cấp thấm...",
-      price: "99.000đ",
+      price: "99.000",
       sale: "đã bán 92.5k",
       imgae: require("../image/productNam/img2.png"),
       detail: [
@@ -37,7 +37,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Áo thun nam cá sấu polo nhiều màu thời trang...",
-      price: "59.950đ",
+      price: "59.950",
       sale: "đã bán 27.6k",
       imgae: require("../image/productNam/img3.png"),
       detail: [
@@ -50,7 +50,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Áo khoác nam unisex cổ đứng vải dù 2 lớp phối...",
-      price: "59.000đ",
+      price: "59.000",
       sale: "đã bán 18k",
       imgae: require("../image/productNam/img4.png"),
       detail: [
@@ -63,7 +63,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Combo 5 quần lót nam tam giác Cotton ...",
-      price: "219.000đ",
+      price: "219.000",
       sale: "đã bán 35.5k",
       imgae: require("../image/productNam/img5.png"),
        detail: [
@@ -73,7 +73,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Dây Thắt Lưng Nam Da Bò Thật VICENZO Cao Cấp...",
-      price: "139.000đ",
+      price: "139.000",
       sale: "đã bán 7.5k",
       imgae: require("../image/productNam/img6.png"),
       detail: [
@@ -86,7 +86,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Tất bóng đá chống trơn Wika, tất đá banh cao cấp...",
-      price: "4.950đ",
+      price: "4.950",
       sale: "đã bán 48.6k",
       imgae: require("../image/productNam/img7.png"),
       detail: [
@@ -99,7 +99,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Quần jean nam Xanh RETRO ống rộng CẠP CAO...",
-      price: "145.000đ",
+      price: "145.000",
       sale: "đã bán 18k",
       imgae: require("../image/productNam/img8.png"),
       detail: [
@@ -112,7 +112,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Quần jean nam xám ống suông rộng Elmen..",
-      price: "159.000đ",
+      price: "159.000",
       sale: "đã bán 21.4k",
       imgae: require("../image/productNam/img9.png"),
       detail: [
@@ -125,7 +125,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Quần thể thao nam 7inch Ultra Short có túi khóa kéo...",
-      price: "109.000đ",
+      price: "109.000",
       sale: "đã bán 75.8k",
       imgae: require("../image/productNam/img10.png"),
       detail: [
@@ -138,7 +138,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Áo sơ mi nam dài tay KJ chất vải lụa thái phom vừa.",
-      price: "79.000đ",
+      price: "79.000",
       sale: "đã bán 25.8k",
       imgae: require("../image/productNam/img11.png"),
       detail: [
@@ -151,7 +151,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Quần âu nam , Quần tây nam hàn quốc dáng ...",
-      price: "99.000đ",
+      price: "99.000",
       sale: "đã bán 25.8k",
       imgae: require("../image/productNam/img12.png"),
       detail: [
@@ -164,7 +164,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Bộ Thể Thao Nam TSIMPLE quần áo tập gym vải thun...",
-      price: "100.000đ",
+      price: "100.000",
       sale: "đã bán 66k",
       imgae: require("../image/productNam/img13.png"),
       detail: [
@@ -177,7 +177,7 @@ const ShopingNam = ({ navigation }) => {
     },
     {
       name: "Áo Hoodie Teelab Local Brand Unisex",
-      price: "79.000đ",
+      price: "79.000",
       sale: "đã bán 50k",
       imgae: require("../image/productNam/img14.png"),
       detail: [
@@ -325,7 +325,7 @@ const ShopingNam = ({ navigation }) => {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.price}
+                        {item.price}đ
                       </Text>
                       <Text
                         style={{

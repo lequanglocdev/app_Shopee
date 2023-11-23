@@ -1,4 +1,11 @@
-import { View, Text, StyleSheet, Image , ScrollView ,Pressable} from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  ScrollView,
+  Pressable,
+} from "react-native";
 import React from "react";
 import Slider from "../components/Slider";
 import Search from "../components/Search";
@@ -9,13 +16,13 @@ export default function Home() {
     <ScrollView>
       <View style={styles.container}>
         <View>
-          {/* <Slider/> */}
-          <View style={{}}>
+          <Slider />
+          {/* <View style={{}}>
             <Image
               source={require("../image/slider/bannerHome.png")}
               style={{ width: "100%", height: 192 }}
             />
-          </View>
+          </View> */}
           {/* Search */}
           <Search />
         </View>
@@ -54,22 +61,6 @@ export default function Home() {
               </View>
               <View style={{ alignItems: "center" }}>
                 <Image
-                  source={require("../image/iconOpption1.png")}
-                  style={{ width: 40, height: 40 }}
-                />
-                <Text
-                  style={{
-                    width: 75,
-                    textAlign: "center",
-                    fontSize: 12,
-                    color: "#fff",
-                  }}
-                >
-                  Shoppe Thời Trang{" "}
-                </Text>
-              </View>
-              <View style={{ alignItems: "center" }}>
-                <Image
                   source={require("../image/iconOpption2.png")}
                   style={{ width: 40, height: 40 }}
                 />
@@ -81,7 +72,7 @@ export default function Home() {
                     color: "#fff",
                   }}
                 >
-                  Shoppe Thời Trang{" "}
+                  ShopeeFood 1Đ+FreeShip
                 </Text>
               </View>
               <View style={{ alignItems: "center" }}>
@@ -97,7 +88,23 @@ export default function Home() {
                     color: "#fff",
                   }}
                 >
-                  Shoppe Thời Trang{" "}
+                  Khung Giờ Săn Sale
+                </Text>
+              </View>
+              <View style={{ alignItems: "center" }}>
+                <Image
+                  source={require("../image/iconOpption4.png")}
+                  style={{ width: 40, height: 40 }}
+                />
+                <Text
+                  style={{
+                    width: 75,
+                    textAlign: "center",
+                    fontSize: 12,
+                    color: "#fff",
+                  }}
+                >
+                  Voucher Giảm Đến 500.000Đ
                 </Text>
               </View>
             </View>
@@ -113,7 +120,7 @@ export default function Home() {
             >
               <View style={{ alignItems: "center" }}>
                 <Image
-                  source={require("../image/iconOpption1.png")}
+                  source={require("../image/iconOpption5.png")}
                   style={{ width: 40, height: 40 }}
                 />
                 <Text
@@ -124,12 +131,12 @@ export default function Home() {
                     color: "#fff",
                   }}
                 >
-                  Shoppe Thời Trang{" "}
+                  Shopee Làm Đẹp
                 </Text>
               </View>
               <View style={{ alignItems: "center" }}>
                 <Image
-                  source={require("../image/iconOpption1.png")}
+                  source={require("../image/iconOpption6.png")}
                   style={{ width: 40, height: 40 }}
                 />
                 <Text
@@ -140,28 +147,28 @@ export default function Home() {
                     color: "#fff",
                   }}
                 >
-                  Shoppe Thời Trang{" "}
+                  Miễn Phí Ship - Có Shopee
                 </Text>
               </View>
               <View style={{ alignItems: "center" }}>
                 <Image
-                  source={require("../image/iconOpption2.png")}
+                  source={require("../image/iconOpption7.png")}
                   style={{ width: 40, height: 40 }}
                 />
                 <Text
                   style={{
-                    width: 75,
+                    width: 100,
                     textAlign: "center",
                     fontSize: 12,
                     color: "#fff",
                   }}
                 >
-                  Shoppe Thời Trang{" "}
+                  Hàng Hiệu Outlet Giảm 50%
                 </Text>
               </View>
               <View style={{ alignItems: "center" }}>
                 <Image
-                  source={require("../image/iconOpption3.png")}
+                  source={require("../image/iconOpption8.png")}
                   style={{ width: 40, height: 40 }}
                 />
                 <Text
@@ -172,7 +179,7 @@ export default function Home() {
                     color: "#fff",
                   }}
                 >
-                  Shoppe Thời Trang{" "}
+                  Khách Hàng Thân Thiết
                 </Text>
               </View>
             </View>
@@ -186,10 +193,9 @@ export default function Home() {
           />
         </View>
 
-
         <SectionRecomment />
 
-        <Product/>
+        <Product />
       </View>
     </ScrollView>
   );

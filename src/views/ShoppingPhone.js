@@ -13,7 +13,7 @@ const ShoppingPhone = ({ navigation }) => {
   const items = [
     {
       name: "Ốp lưng iphone dẻo cạnh vuông lưng cứng phím...",
-      price: "15.000đ",
+      price: "15.000",
       sale: "đã bán 14k",
       imgae: require("../image/productPhone/img.png"),
       detail: [
@@ -23,7 +23,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Sạc dự phòng tích hợp màn hình Led Dung Lượng..",
-      price: "159.000đ",
+      price: "159.000",
       sale: "đã bán 92.5k",
       imgae: require("../image/productPhone/img2.png"),
       detail: [
@@ -34,7 +34,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Điện thoại Apple iPhone 14 Pro Max 128GB",
-      price: "27.090.000đ",
+      price: "27.090.000",
       sale: "đã bán 27.6k",
       imgae: require("../image/productPhone/img3.png"),
       detail: [
@@ -46,7 +46,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "áp sạc nhanh Essager Type C 60W/100W...",
-      price: "28.000đ",
+      price: "28.000",
       sale: "đã bán 18k",
       imgae: require("../image/productPhone/img4.png"),
       detail: [
@@ -57,7 +57,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Kính cường lực iphone 21D Full Màn IP..",
-      price: "1.000đ",
+      price: "1.000",
       sale: "đã bán 5.5k",
       imgae: require("../image/productPhone/img5.png"),
       detail: [
@@ -67,7 +67,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Ốp Điện Thoại Silicon Dẻo Bề Mặt Vải Thời Trang....",
-      price: "35.000đ",
+      price: "35.000",
       sale: "đã bán 7.5k",
       imgae: require("../image/productPhone/img6.png"),
       detail: [
@@ -77,7 +77,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Ốp Điện Thoại Vải Mềm Hình Gấu 3D Thời Trang....",
-      price: "22.950đ",
+      price: "22.950",
       sale: "đã bán 7.6k",
       imgae: require("../image/productPhone/img7.png"),
       detail: [
@@ -87,7 +87,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Ốp lưng iphone dẻo cạnh vuông lưng cứng phím...",
-      price: "15.000đ",
+      price: "15.000",
       sale: "đã bán 18k",
       imgae: require("../image/productPhone/img8.png"),
       detail: [
@@ -97,7 +97,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Ốp điện thoại iphone hở táo 6D viền vuông...",
-      price: "10.000đ",
+      price: "10.000",
       sale: "đã bán 18k",
       imgae: require("../image/productPhone/img9.png"),
       detail: [
@@ -107,13 +107,13 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Ốp Điện Thoại Silicon TPU Mềm Chống Sốc Cho...",
-      price: "19.000đ",
+      price: "19.000",
       sale: "đã bán 18k",
       imgae: require("../image/productPhone/img10.png"),
     },
     {
       name: "Điện thoại OppoA3s (Oppo A3 S) 2sim ram 6/128G...",
-      price: "49  9.000đ",
+      price: "499.000",
       sale: "đã bán 710",
       imgae: require("../image/productPhone/img11.png"),
       detail: [
@@ -123,7 +123,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Điện thoại Apple iPhone 13 128GB...",
-      price: "16.490.000đ",
+      price: "16.490.000",
       sale: "đã bán 18k",
       imgae: require("../image/productPhone/img12.png"),
       detail: [
@@ -133,7 +133,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Điện thoại di động Inflnix Note10 Điện thoại gốc...",
-      price: "2.990.000đ",
+      price: "2.990.000",
       sale: "đã bán 120k",
       imgae: require("../image/productPhone/img13.png"),
       detail: [
@@ -143,7 +143,7 @@ const ShoppingPhone = ({ navigation }) => {
     },
     {
       name: "Điện thoại Vivo Y11 ram 8/256G 2sim Chính Hãng...",
-      price: "1.790.000đ",
+      price: "1.790.000",
       sale: "đã bán 20k",
       imgae: require("../image/productPhone/img14.png"),
       detail: [
@@ -273,7 +273,7 @@ const ShoppingPhone = ({ navigation }) => {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.price}
+                        {item.price}đ
                       </Text>
                       <Text
                         style={{

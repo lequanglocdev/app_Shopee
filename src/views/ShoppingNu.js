@@ -13,7 +13,7 @@ function ShoppingNu({ navigation }) {
   const items = [
     {
       name: "Áo Sơ Mi Chất Nhung Tăm Nam Nữ Form Rộng Nâu....",
-      price: "79.000đ",
+      price: "79.000",
       sale: "đã bán 10.6k",
       imgae: require("../image/productNu/img.png"),
       detail: [
@@ -24,7 +24,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo Thun Cotton 50753 Mỏng Vừa Vặn Màu ..",
-      price: "99.000đ",
+      price: "99.000",
       sale: "đã bán 92.5k",
       imgae: require("../image/productNu/img2.png"),
       detail: [
@@ -37,7 +37,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo Dạ Tweed Hai Lớp Cao Cấp Màu Tiêu Cúc...",
-      price: "139.950đ",
+      price: "139.950",
       sale: "đã bán 27.6k",
       imgae: require("../image/productNu/img3.png"),
       detail: [
@@ -49,7 +49,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "CHÂN VÁY BÒ 2 TÚI TRƯỚC XẺ VẠT SIÊU HOT JEANS...",
-      price: "26.000đ",
+      price: "26.000",
       sale: "đã bán 18k",
       imgae: require("../image/productNu/img4.png"),
       detail: [
@@ -61,7 +61,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Set Bộ Đồ Nữ Phông cotton Phối Quần Chấm Bi Lụa ...",
-      price: "185.000đ",
+      price: "185.000",
       sale: "đã bán 15k",
       imgae: require("../image/productNu/img5.png"),
       detail: [
@@ -70,7 +70,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo Thun Form Fit Chữ B Chất Thun Co Dãn 2023",
-      price: "159.000đ",
+      price: "159.000",
       sale: "đã bán 21.8k",
       imgae: require("../image/productNu/img6.png"),
       detail: [
@@ -82,7 +82,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Tất cổ ngắn nam nữ chất liệu cotton dày co giãn....",
-      price: "8.950đ",
+      price: "8.950",
       sale: "đã bán 63.6k",
       imgae: require("../image/productNu/img7.png"),
       detail: [
@@ -91,7 +91,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo ba lỗ nữ croptop có loại SẴN MÚT ĐỆM NGỰC...",
-      price: "65.000đ",
+      price: "65.000",
       sale: "đã bán 48k",
       imgae: require("../image/productNu/img8.png"),
       detail: [
@@ -105,7 +105,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Bộ Pijama Chất Lụa Gấm Tay Dài- Quần Dài",
-      price: "179.000đ",
+      price: "179.000",
       sale: "đã bán 66k",
       imgae: require("../image/productNu/img9.png"),
       detail: [
@@ -119,7 +119,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "[Quần Ống Rộng Suông Lưng Cao Khóa Trước...",
-      price: "160.000đ",
+      price: "160.000",
       sale: "đã bán 66k",
       imgae: require("../image/productNu/img10.png"),
       detail: [
@@ -133,7 +133,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Quần ống đứng túi ngang chất ruby mã Quansu ...",
-      price: "125.000đ",
+      price: "125.000",
       sale: "đã bán 15k",
       imgae: require("../image/productNu/img11.png"),
       detail: [
@@ -145,7 +145,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo Thun Cổ Tròn Lệch Vai Xoắn Eo Tôn Dáng Nhiều ...",
-      price: "29.000đ",
+      price: "29.000",
       sale: "đã bán 21.8k",
       imgae: require("../image/productNu/img12.png"),
       detail: [
@@ -157,7 +157,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Quần Jeans Nữ Ống Rộng, Quần Bò Nữ Ống Suông ....",
-      price: "149.950đ",
+      price: "149.950",
       sale: "đã bán 63.6k",
       imgae: require("../image/productNu/img13.png"),
       detail: [
@@ -169,7 +169,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Đồ bộ nam chất thun lạnh in Ice Ice đường ray cực ...",
-      price: "49.000đ",
+      price: "49.000",
       sale: "đã bán 48k",
       imgae: require("../image/productNu/img14.png"),
       detail: [
@@ -181,7 +181,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo Khoác Hoodie Zip Chất Nỉ Bông Mũ 2 Lớp In ...",
-      price: "50.000đ",
+      price: "50.000",
       sale: "đã bán 48k",
       imgae: require("../image/productNu/img15.png"),
       detail: [
@@ -193,7 +193,7 @@ function ShoppingNu({ navigation }) {
     },
     {
       name: "Áo thun nam nữ unisex form rộng tay SỌC VAI ...",
-      price: "40.000đ",
+      price: "40.000",
       sale: "đã bán 48k",
       imgae: require("../image/productNu/img16.png"),
       detail: [
@@ -332,7 +332,7 @@ function ShoppingNu({ navigation }) {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.price}
+                        {item.price}đ
                       </Text>
                       <Text
                         style={{

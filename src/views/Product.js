@@ -15,12 +15,13 @@ export default function Product({navigation}) {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <View style={{}}>
+        <Slider/>
+        {/* <View style={{}}>
           <Image
             source={require("../image/slider/bannerHome.png")}
             style={{ width: "100%", height: 192 }}
           />
-        </View>
+        </View> */}
         <Search />
         <View
           style={{

@@ -13,7 +13,7 @@ const ShoppingBe = ({navigation}) => {
   const items = [
     {
       name: "Dầu mát xa dưỡng ẩm Johnson's baby oil pink ...",
-      price: "44.000đ",
+      price: "44.000",
       sale: "đã bán 10.6k",
       imgae: require("../image/productBe/img.png"),
       detail: [
@@ -22,7 +22,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Nước hoa cho bé Johnson's Baby nhiều mùi ...",
-      price: "49.000đ",
+      price: "49.000",
       sale: "đã bán 92.5k",
       imgae: require("../image/productBe/img2.png"),
       detail: [
@@ -32,7 +32,7 @@ const ShoppingBe = ({navigation}) => {
     
     {
       name: "Bịch 50 miếng bỉm quần Miobuss cao cấp cho con...",
-      price: "200.000đ",
+      price: "200.000",
       sale: "đã bán 14k",
       imgae: require("../image/productBe/img3.png"),
       detail: [
@@ -41,7 +41,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "[MẪU MỚI TẶNG 4 MIẾNG] Miếng Lót Bobby Newborn ..",
-      price: "95.000đ",
+      price: "95.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img4.png"),
       detail: [
@@ -50,7 +50,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "[Mẫu mới] Tã quần UniDry Siêu khô thoáng gói Super..",
-      price: "269.000đ",
+      price: "269.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img5.png"),
       detail: [
@@ -68,7 +68,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "(1 Thanh) Sữa Meiji Thanh Số 0, Nhập Khẩu 27g...",
-      price: "26.950đ",
+      price: "26.950",
       sale: "đã bán 33.6k",
       imgae: require("../image/productBe/img7.png"),
       detail: [
@@ -77,7 +77,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Dầu Dưỡng Ẩm Mát Xa Johnson's Baby...",
-      price: "45.000đ",
+      price: "45.000",
       sale: "đã bán 9.1k",
       imgae: require("../image/productBe/img8.png"),
       detail: [
@@ -86,7 +86,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Ghế nhún, ghế rung (GHẾ + GỐI + THÚ TREO)  đa năng...",
-      price: "160.000đ",
+      price: "160.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img9.png"),
       detail: [
@@ -95,7 +95,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Băng Vệ Sinh MAMA 12 Miếng (Cho Mẹ Sau Sinh) ...",
-      price: "30.000đ",
+      price: "30.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img10.png"),
       detail: [
@@ -104,7 +104,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "(Xưởng Sản Xuất) Xe tập đi gỗ - xe gà tập đi hình...",
-      price: "95.000đ",
+      price: "95.000",
       sale: "đã bán 14k",
       imgae: require("../image/productBe/img11.png"),
       detail: [
@@ -113,7 +113,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Chậu tắm cho bé hậu Tắm Cho Bé Đa Năng Dễ Dàng..",
-      price: "26.950đ",
+      price: "26.950",
       sale: "đã bán 63.6k",
       imgae: require("../image/productBe/img12.png"),
       detail: [
@@ -122,7 +122,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "HUNG 10 bịch Khăn giấy ướt  DUCK con vịt vàng ...",
-      price: "45.000đ",
+      price: "45.000",
       sale: "đã bán 48k",
       imgae: require("../image/productBe/img13.png"),
       detail: [
@@ -131,7 +131,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Bình sữa hình mèo PPSU cổ rộng kèm tay cầm van ...",
-      price: "29.000đ",
+      price: "29.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img14.png"),
       detail: [
@@ -140,7 +140,7 @@ const ShoppingBe = ({navigation}) => {
     },
     {
       name: "Chậu Tắm Ếch cao cấp cho bé có van thoát nước ...",
-      price: "30.000đ",
+      price: "30.000",
       sale: "đã bán 66k",
       imgae: require("../image/productBe/img15.png"),
       detail: [
@@ -278,7 +278,7 @@ const ShoppingBe = ({navigation}) => {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.price}
+                        {item.price}đ
                       </Text>
                       <Text
                         style={{

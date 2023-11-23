@@ -13,7 +13,7 @@ const ShoppingTv = ({navigation}) => {
   const items = [
     {
       name: "Tai nghe Bluetooth không dây 5.0 MINPRO - AMOI F9...",
-      price: "19.000đ",
+      price: "19.000",
       sale: "đã bán 6.6k",
       imgae: require("../image/productThietBi/img.png"),
       detail: [
@@ -22,7 +22,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Loa bluetooth mini không dây,nghe nhạc,giá rẻ...",
-      price: "1.000đ",
+      price: "1.000",
       sale: "đã bán 11.5k",
       imgae: require("../image/productThietBi/img2.png"),
       detail: [
@@ -32,7 +32,7 @@ const ShoppingTv = ({navigation}) => {
    
     {
       name: "Miếng dán hình mèo thần tài thu hút tài lộc trang trí...",
-      price: "4.950đ",
+      price: "4.950",
       sale: "đã bán 11.6k",
       imgae: require("../image/productThietBi/img3.png"),
       detail: [
@@ -41,7 +41,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Quạt tản nhiệt sò lạnh cho điện thoại S3 - Kẹp 2 chiều..",
-      price: "135.000đ",
+      price: "135.000",
       sale: "đã bán 18k",
       imgae: require("../image/productThietBi/img4.png"),
       detail: [
@@ -50,7 +50,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Tai nghe Apple AirPods with Charging Case 2nd...",
-      price: "2.690.000đ",
+      price: "2.690.000",
       sale: "đã bán 29.5k",
       imgae: require("../image/productThietBi/img5.png"),
       detail: [
@@ -59,7 +59,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Loa Bluetooth Mini 5.0 ROBOT RB100 3W - Pin...",
-      price: "139.000đ",
+      price: "139.000",
       sale: "đã bán 7.5k",
       imgae: require("../image/productThietBi/img6.png"),
       detail: [
@@ -68,7 +68,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Loa bluetooth nghe nhạc không dây Charge 3 Mini...",
-      price: "99.000đ",
+      price: "99.000",
       sale: "đã bán 88.6k",
       imgae: require("../image/productThietBi/img7.png"),
       detail: [
@@ -77,7 +77,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Tai nghe Bluetooth không dây MINPRO M19 -  Hỗ Trợ...",
-      price: "37.000đ",
+      price: "37.000",
       sale: "đã bán 18k",
       imgae: require("../image/productThietBi/img8.png"),
       detail: [
@@ -86,7 +86,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Tai nghe BASEUS C17 Type-C có dây có mic cho điện ...",
-      price: "129.000đ",
+      price: "129.000",
       sale: "đã bán 4.4k",
       imgae: require("../image/productThietBi/img9.png"),
       detail: [
@@ -95,7 +95,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Tai nghe chụp tai Logitech H111 - 1 jack 3.5mm, Mic...",
-      price: "179.000đ",
+      price: "179.000",
       sale: "đã bán 5.5k",
       imgae: require("../image/productThietBi/img10.png"),
       detail: [
@@ -104,7 +104,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Máy Chơi Game Nintendo DSi Full Game...",
-      price: "986.000đ",
+      price: "986.000",
       sale: "đã bán 5.5k",
       imgae: require("../image/productThietBi/img11.png"),
       detail: [
@@ -113,7 +113,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Tay Cầm Chơi Game X3/T3 Có Bluetooth Cho ...",
-      price: "440.000đ",
+      price: "440.000",
       sale: "đã bán 5.5k",
       imgae: require("../image/productThietBi/img12.png"),
       detail: [
@@ -122,7 +122,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Máy chơi game cầm tay X7 màn hình 4.3 inch tặng ...",
-      price: "179.000đ",
+      price: "179.000",
       sale: "đã bán 66k",
       imgae: require("../image/productThietBi/img13.png"),
       detail: [
@@ -131,7 +131,7 @@ const ShoppingTv = ({navigation}) => {
     },
     {
       name: "Máy chơi game cầm tay X7 màn hình 4.3 inch tặng ...",
-      price: "690.000đ",
+      price: "690.000",
       sale: "đã bán 29.5k",
       imgae: require("../image/productThietBi/img14.png"),
       detail: [
@@ -261,7 +261,7 @@ const ShoppingTv = ({navigation}) => {
                           fontWeight: "bold",
                         }}
                       >
-                        {item.price}
+                        {item.price}đ
                       </Text>
                       <Text
                         style={{

@@ -1,11 +1,26 @@
 import { StyleSheet, Text, View } from "react-native";
-import { Home, Product, Notify, User, Login ,ShopingNam ,ShoppingNu,ShoppingHouse,ShoppingBe,ShoppingPhone,ShoppingThietBi,DetailProduct,Cart} from "./src/views";
+import {
+  Home,
+  Product,
+  Notify,
+  User,
+  Login,
+  ShopingNam,
+  ShoppingNu,
+  ShoppingHouse,
+  ShoppingBe,
+  ShoppingPhone,
+  ShoppingThietBi,
+  DetailProduct,
+  Cart,
+  Pay,
+  Pay2,
+  PaySuccess
+} from "./src/views";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome, Ionicons, FontAwesome5 } from "@expo/vector-icons";
-import { Provider } from "react-redux";
-import { store } from "./src/redux/store";
 const Tab = createBottomTabNavigator();
 function MyTabs() {
   const screenOptions = {
@@ -34,7 +49,6 @@ function MyTabs() {
                   style={{
                     alignItems: "center",
                     justifyContent: "center",
-
                     width: 80,
                   }}
                 >
@@ -43,7 +57,14 @@ function MyTabs() {
                     size={30}
                     color={focused ? "#F06145" : "#111"}
                   />
-                  <Text style={{ fontSize: 14, color: focused ? "#F06145" : "#111" }}>Trang chủ</Text>
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      color: focused ? "#F06145" : "#111",
+                    }}
+                  >
+                    Trang chủ
+                  </Text>
                 </View>
               </View>
             );
@@ -66,8 +87,19 @@ function MyTabs() {
                     width: 80,
                   }}
                 >
-                  <FontAwesome5 name="shopping-bag" size={24} color={focused ? "#F06145" : "#111"} />
-                  <Text style={{ fontSize: 14, color: focused ? "#F06145" : "#111" }}>Mua hàng</Text>
+                  <FontAwesome5
+                    name="shopping-bag"
+                    size={24}
+                    color={focused ? "#F06145" : "#111"}
+                  />
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      color: focused ? "#F06145" : "#111",
+                    }}
+                  >
+                    Mua hàng
+                  </Text>
                 </View>
               </View>
             );
@@ -90,8 +122,19 @@ function MyTabs() {
                     width: 80,
                   }}
                 >
-                  <Ionicons name="notifications" size={24} color={focused ? "#F06145" : "#111"} />
-                  <Text style={{ fontSize: 14, color:focused ? "#F06145" : "#111"}}>Thông báo</Text>
+                  <Ionicons
+                    name="notifications"
+                    size={24}
+                    color={focused ? "#F06145" : "#111"}
+                  />
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      color: focused ? "#F06145" : "#111",
+                    }}
+                  >
+                    Thông báo
+                  </Text>
                 </View>
               </View>
             );
@@ -114,8 +157,19 @@ function MyTabs() {
                     width: 80,
                   }}
                 >
-                  <FontAwesome name="user" size={24} color={focused ? "#F06145" : "#111"} />
-                  <Text style={{ fontSize: 14, color: focused ? "#F06145" : "#111" }}>Tôi</Text>
+                  <FontAwesome
+                    name="user"
+                    size={24}
+                    color={focused ? "#F06145" : "#111"}
+                  />
+                  <Text
+                    style={{
+                      fontSize: 14,
+                      color: focused ? "#F06145" : "#111",
+                    }}
+                  >
+                    Tôi
+                  </Text>
                 </View>
               </View>
             );
@@ -129,22 +183,26 @@ export default function App() {
   const Stack = createNativeStackNavigator();
 
   return (
-    <Provider store={store}>
+   
       <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Home" component={MyTabs} />
-        <Stack.Screen name="ShopingNam" component={ShopingNam} />
-        <Stack.Screen name="ShoppingNu" component={ShoppingNu} />
-        <Stack.Screen name="ShoppingHouse" component={ShoppingHouse} />
-        <Stack.Screen name="ShoppingPhone" component={ShoppingPhone} />
-        <Stack.Screen name="ShoppingBe" component={ShoppingBe} />
-        <Stack.Screen name="ShoppingThietBi" component={ShoppingThietBi} />
-        <Stack.Screen name="DetailProduct" component={DetailProduct} />
-        <Stack.Screen name="Cart" component={Cart} />
-      </Stack.Navigator>
-    </NavigationContainer>
-    </Provider>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Home" component={MyTabs} />
+          <Stack.Screen name="ShopingNam" component={ShopingNam} />
+          <Stack.Screen name="ShoppingNu" component={ShoppingNu} />
+          <Stack.Screen name="ShoppingHouse" component={ShoppingHouse} />
+          <Stack.Screen name="ShoppingPhone" component={ShoppingPhone} />
+          <Stack.Screen name="ShoppingBe" component={ShoppingBe} />
+          <Stack.Screen name="ShoppingThietBi" component={ShoppingThietBi} />
+          <Stack.Screen name="DetailProduct" component={DetailProduct} />
+          <Stack.Screen name="Cart" component={Cart} />
+          <Stack.Screen name="Product" component={Product} />
+          <Stack.Screen name="Pay" component={Pay} />
+          <Stack.Screen name="Pay2" component={Pay2} />
+          <Stack.Screen name="PaySuccess" component={PaySuccess} />
+        </Stack.Navigator>
+      </NavigationContainer>
+   
   );
 }
 

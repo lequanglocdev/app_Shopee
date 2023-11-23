@@ -6,12 +6,11 @@ import {
   View,
   ScrollView,
   Pressable,
-  Modal
+  Modal,
 } from "react-native";
 import { AntDesign, FontAwesome5 } from "@expo/vector-icons";
 
 const Search = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false)
   return (
     <View
       style={{
@@ -35,7 +34,12 @@ const Search = () => {
           borderRadius: 4,
         }}
       >
-        <FontAwesome5 name="search" size={24} color="#F06145"  style={{paddingHorizontal:8}}/>
+        <FontAwesome5
+          name="search"
+          size={24}
+          color="#F06145"
+          style={{ paddingHorizontal: 8 }}
+        />
         <TextInput
           placeholder="Tìm Shopee"
           style={{
@@ -47,16 +51,16 @@ const Search = () => {
         />
       </View>
 
-      <View>
+      <Pressable 
+          
+      >
         <Image
           source={require("../image/iconCart.png")}
           style={{ width: 30, height: 30 }}
         />
-      </View>
+      </Pressable>
 
-      <Pressable 
-        onPress={() => setIsModalVisible(true)}
-      >
+      <Pressable>
         <View>
           <Image
             source={require("../image/iconUser2.png")}
@@ -64,13 +68,6 @@ const Search = () => {
           />
         </View>
       </Pressable>
-      <Modal
-          visible={isModalVisible}
-      >
-          <View style={{width:100,height:100,backgroundColor:'#ccc'}}> 
-              <Text>Modal content</Text>
-          </View>
-      </Modal>
     </View>
   );
 };
